@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import TopicList from './components/TopicList'
+import RsvpList from './components/RsvpList'
 import './App.css';
 
 const rsvps = [
@@ -257,9 +258,15 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <main>
-        <div className="App-Topiclist">
-          <TopicList topics={ list } />
-        </div>
+          <div className="App-Topiclist">
+            <TopicList topics={ list } />
+          </div>
+
+          <div className="App-RsvpList">
+            <RsvpList rsvps={ rsvps } />
+          </div>
+
+
         </main>
       </div>
     );
